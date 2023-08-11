@@ -1,0 +1,208 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    justify-content: center;
+    overflow-x: hidden;
+}
+#navbar{
+    font-weight: 400;
+    letter-spacing: -.01em;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    /* border: 2px solid rebeccapurple; */
+    background-color: rgba(0, 0, 0, 0.792);
+    font-size: 0.9vw;
+    position:fixed;
+    backdrop-filter: blur(10px);
+    z-index: 2;
+    /* background-color: rgb(74, 74, 74); */
+}
+#navbar ul{
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    list-style-type: none;
+}
+#right_icons{
+    display: flex;
+}
+#navbar ul a{
+    color: rgb(197, 197, 197);
+    padding: 0vw 0.4vw 0vw 0.4vw;
+    margin: 0vw 0.9vw 0vw 0.9vw;
+    text-decoration: none;
+}
+#navbar ul a:hover,#navbar ul a:hover i{
+    color: rgb(225,225,225) !important;
+}
+div#ads{
+    display: flex;
+    font-size: 0.95vw;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    margin-top: 6vh;
+}
+#ads a{
+    text-decoration: none;
+    color: #06c;
+}
+#ads a:hover{
+    text-decoration: underline;
+}
+#forUniversity,#iphone14,#iphone14pro{
+    border: none;
+    width: 100%;
+    height: 78vh;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2vh;
+    background-color: transparent;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* background-image : url("https://www.apple.com/105/media/ww/home/2023/c75c958b-b7ab-431f-8c24-703fa6aafd7e/anim/bts-hero/large.mp4") center cover; */
+}
+#forUniversity h1,#iphone14pro h1,#iphone14 h1{
+    font-size: 3.55vw;
+    width: 34%;
+    margin-top: 5vh;
+    margin-bottom: -2.5vh;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    background-color: transparent;
+}
+#forUniversity h3,#iphone14pro h3,#iphone14 h3{
+    font-size: 1.9vw;
+    font-weight: 500;
+    letter-spacing: -0.04em;
+    margin-bottom: 2vh;
+}
+#forUniversity a,#iphone14pro a,#iphone14 a{
+    text-decoration: none;
+    color: #06c;
+    font-size: 1.35vw;
+}
+#forUniversity video{
+    display: flex;
+    position: absolute;
+    /* width: 100%; */
+    z-index:-1;
+    margin-top: -6vh;
+    /* width: 99.5vw;
+    height: 84vh; */
+}
+#iphone14pro{
+    color: white;
+    background-color: rgba(0, 0, 0);
+    height: 80vh;
+    overflow: hidden;
+    /* padding-bottom: 2vh !important; */
+}
+#iphone14pro img{
+    display: flex;
+    position: relative;
+    /* z-index: -1; */
+    align-self:center;
+    width: 65%;
+    margin-top: -4vh;
+    /* margin-bottom: 100vh !important; */
+    /* margin-bottom: 0vh !important; */
+}
+#iphone14pro .links,#iphone14pro h3{
+    z-index: 2;
+    background-color: transparent;
+}
+#iphone14{
+    color: rgb(16, 16, 16);
+    background-color: rgb(255, 255, 255);
+    /* margin-bottom: 0px; */
+}
+#iphone14 img{
+    display: flex;
+    width: 50%;
+}
+.links{
+    display: flex;
+}
+.links a{
+    margin: 0vh 0.8vw 0vh 0.8vw;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.cards button{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48.5%;
+    margin-bottom: 2vh;
+    height: 48vh;
+}
+.hoverMenu{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    z-index: 1000;
+    margin-top: 5.7vh;
+    padding: 3.5vh 0vw 6vh 0vw;
+    justify-content: center;
+    background-color: rgb(20, 20, 20);
+    position: fixed;
+    visibility: hidden;
+}
+.hoverMenu .lists{
+    display: flex;
+    width: 70.2%;
+    justify-content: left;
+}
+.hoverMenu ul{
+    list-style-type: none;
+    margin-right: 2.2vw;
+    /* margin: 5vh 10vw 5vh 10vw; */
+}
+.hoverMenu ul li{
+    font-weight: 600;
+}
+.hoverMenu ul li a{
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: rgb(224, 224, 224);
+}
+.hoverMenu ul li a:hover{
+    color: rgb(240, 240, 240);
+}
+#ul1 li{
+    font-size: 1.6vw;
+    margin-bottom: 2vh;
+}
+#ul2 li,#ul3 li{
+    font-size: 0.9vw;
+    margin-bottom: 1.4vh;
+}
+#listHead{
+    font-weight: 400 !important;
+    font-size: 0.9vw !important;
+    color: #bebebe;
+    margin-bottom: 2.7vh !important;
+}
+.Visible{
+    visibility: visible !important;
+    /* transition-property: visibility;
+    transition-duration: 2s; */
+}
+
+/* .upperheader{
+    border: 2px solid blue;
+    background-color: rgb(20, 20, 20);
+} */
