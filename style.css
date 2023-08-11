@@ -163,18 +163,20 @@ div#ads{
     margin-bottom: 2vh;
     height: 78vh;
     background-color: transparent;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 .cards button h1{
     font-size: 2.4vw;
     font-weight: 600;
     width: 55%;
     letter-spacing: -0.02em;
-    margin-bottom: -1vh;
+    margin-bottom: 0vh;
 }
 .cards button h3{
     font-size: 1.4vw;
+    opacity: 0.85;
     font-weight: 500;
+    margin-top: 1.6vh;
     letter-spacing: -0.01em;
     width: 63%;
 }
@@ -198,7 +200,7 @@ div#ads{
     height: 100vh;
     /* height: 80vh; */
 }
-#watch{
+#watch,#ipad,#airpods{
     color: white;
 }
 #watch h1{
@@ -206,7 +208,7 @@ div#ads{
     margin-top: 7vh;
 }
 #watch h5{
-    margin-top: 1vh;
+    margin-top: 0vh;
     margin-bottom: 1.5vh;
     font-size: 0.9vw;
     letter-spacing: 0.1em;
@@ -214,13 +216,23 @@ div#ads{
 }
 #watch h3{
     margin-top: 0vh;
-    margin-bottom: 5vh;
+    /* margin-bottom: 5vh; */
 }
 #watch img{
     width: 177%;
-    margin-top: -28vh;
+    margin-top: -26vh;
 }
-
+#airpods h1,#trade h1{
+    margin-top: 7vh;
+}
+#ipad img,#airpods img,#trade img{
+    width: 180%;
+    margin-top: -24vh;
+}
+/* {
+    width: 180%;
+    margin-top: -15vh; */
+/* } */
 .hoverMenu{
     width: 100%;
     height: fit-content;
