@@ -84,9 +84,13 @@ div#ads{
     letter-spacing: -0.04em;
     margin-bottom: 2vh;
 }
-#forUniversity a,#iphone14pro a,#iphone14 a{
+.links{
+    display: flex;
+}
+#iphone14 a,#forUniversity a,#iphone14pro a,button a{
     text-decoration: none;
     color: #06c;
+    margin: 0vh 0.8vw 0vh 0.8vw;
     font-size: 1.35vw;
 }
 #forUniversity video{
@@ -128,27 +132,67 @@ div#ads{
     display: flex;
     width: 50%;
 }
-.links{
-    display: flex;
-}
-.links a{
-    margin: 0vh 0.8vw 0vh 0.8vw;
-}
 .cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
 }
 .cards button{
     border: none;
     display: flex;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial;
     flex-direction: column;
     align-items: center;
     width: 48.5%;
+    overflow: hidden;
     margin-bottom: 2vh;
-    height: 48vh;
+    height: 68vh;
 }
+.cards button h1{
+    font-size: 2.4vw;
+    font-weight: 600;
+    width: 55%;
+    letter-spacing: -0.02em;
+    margin-bottom: -1vh;
+}
+.cards button h3{
+    font-size: 1.4vw;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    width: 63%;
+}
+.cards button a{
+    font-size: 1.05vw;
+}
+.cards button img{
+    
+    display: flex;
+}
+#switch{
+    background-color: white;
+    /* border: 2px solid crimson; */
+}
+#switch img{
+    display: flex;
+    width: 71%;
+    /* align-self: center; */
+
+    /* position: relative; */
+    /* border: 2px solid crimson; */
+}
+#macbook{
+    /* overflow: visible !important; */
+    background-color: transparent;
+}
+#macbook img{
+    width: 149%;
+    margin-top:-21vh;
+    z-index: -1;
+    height: 100vh;
+    position: relative;
+    /* height: 80vh; */
+}
+
 .hoverMenu{
     width: 100%;
     height: fit-content;
