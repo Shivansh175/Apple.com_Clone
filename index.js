@@ -158,3 +158,21 @@ document.querySelector("#apple_logo").addEventListener("mouseenter",function(){
         arr2[i].classList.remove("Visible");
     }
 });
+
+
+// CODE TO PLAY/PAUSE THE 'GET BACK TO SCHOOL' VIDEO--
+var state="played";
+document.querySelector("#button").addEventListener("click",function(){
+    document.querySelector("#button").classList.toggle("fa-circle-pause");
+    document.querySelector("#button").classList.toggle("fa-circle-play");
+    if(state==="played")
+    {
+        document.querySelector("#forUniversity video").pause();
+        state="paused";
+    }
+    else{
+        document.querySelector("#forUniversity video").play();
+        state="played";
+    }
+        
+});

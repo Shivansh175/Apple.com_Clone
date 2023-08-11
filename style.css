@@ -102,6 +102,19 @@ div#ads{
     /* width: 99.5vw;
     height: 84vh; */
 }
+#forUniversity #button{
+    align-self: flex-end;
+    /* width: 2vw; */
+    /* position: absole; */
+    font-size: 2.5vw;
+    opacity: 0.8;
+    margin-top:37vh;
+    margin-right: 1vw;
+}
+#forUniversity #button:hover{
+    /* background-color: white; */
+    opacity: 1;
+}
 #iphone14pro{
     color: white;
     background-color: rgba(0, 0, 0);
@@ -125,12 +138,13 @@ div#ads{
 }
 #iphone14{
     color: rgb(16, 16, 16);
-    background-color: rgb(255, 255, 255);
+    background-color: transparent
     /* margin-bottom: 0px; */
 }
 #iphone14 img{
     display: flex;
     width: 50%;
+    z-index: -1;
 }
 .cards{
     display: flex;
@@ -140,13 +154,16 @@ div#ads{
 .cards button{
     border: none;
     display: flex;
+    cursor:pointer;
     font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial;
     flex-direction: column;
     align-items: center;
     width: 48.5%;
     overflow: hidden;
     margin-bottom: 2vh;
-    height: 68vh;
+    height: 78vh;
+    background-color: transparent;
+    border: 2px solid green;
 }
 .cards button h1{
     font-size: 2.4vw;
@@ -162,35 +179,46 @@ div#ads{
     width: 63%;
 }
 .cards button a{
-    font-size: 1.05vw;
+    font-size: 1.2vw;
+    color: #06c;
 }
 .cards button img{
-    
+    z-index: -1;
     display: flex;
-}
-#switch{
-    background-color: white;
-    /* border: 2px solid crimson; */
+    position: relative;
 }
 #switch img{
-    display: flex;
-    width: 71%;
-    /* align-self: center; */
-
-    /* position: relative; */
+    width: 79%;
+    margin-top: 4vh;
     /* border: 2px solid crimson; */
-}
-#macbook{
-    /* overflow: visible !important; */
-    background-color: transparent;
 }
 #macbook img{
     width: 149%;
     margin-top:-21vh;
-    z-index: -1;
     height: 100vh;
-    position: relative;
     /* height: 80vh; */
+}
+#watch{
+    color: white;
+}
+#watch h1{
+    font-size: 2.0vw;
+    margin-top: 7vh;
+}
+#watch h5{
+    margin-top: 1vh;
+    margin-bottom: 1.5vh;
+    font-size: 0.9vw;
+    letter-spacing: 0.1em;
+    color: crimson;
+}
+#watch h3{
+    margin-top: 0vh;
+    margin-bottom: 5vh;
+}
+#watch img{
+    width: 177%;
+    margin-top: -28vh;
 }
 
 .hoverMenu{
