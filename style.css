@@ -303,6 +303,16 @@ div#ads{
     background-image: url("https://is3-ssl.mzstatic.com/image/thumb/OCdJtCx9e51TYxoG8aBJZQ/1250x703.jpg");
 
 }
+.nav {
+    margin-bottom: 2vh;
+}
+/* .nav #pauseButton{
+    margin-left: 45vw;
+} */
+/* .nav .fa-circle{
+    margin: 0vh 0.31vw;
+    align-self: center;
+} */
 .hoverMenu{
     width: 100%;
     height: fit-content;
@@ -370,7 +380,49 @@ div#ads{
 .next,.prev{
     opacity: 0.4;
 }
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ececec95;
+    width: 100%;
+}
+footer p{
+    width: 63%;
+    letter-spacing: -0.01em;
+    line-height: 1.4;
+    font-size: 0.8vw;
+    color: rgb(92, 92, 92);
+    margin-bottom: 0vh;
+}
+footer p a{
+    color: rgb(56, 56, 56);
+}
+footer hr{
+    width: 63%;
+    color: rgb(92, 92, 92);
+    margin: 3vh 0vw;
+}
+.lists{
+    width: 63%;
+    justify-content: space-between;
+    display: flex;
+}
+.lists ul{
+    list-style-type: none;
 
+}
+.lists li a{
+    text-decoration: none;
+    color: rgb(92, 92, 92);
+    letter-spacing: -0.01em;
+    line-height: 2;
+    font-size: 0.8vw;
+}
+.lists li a:hover{
+    text-decoration: underline;
+}
 /* .upperheader{
     border: 2px solid blue;
     background-color: rgb(20, 20, 20);
