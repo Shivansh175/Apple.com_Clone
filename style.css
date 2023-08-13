@@ -414,6 +414,8 @@ footer .lists{
     display: flex;
 }
 footer .lists ul{
+    margin: 0px;
+    padding: 0px;
     list-style-type: none;
     font-size: 0.8vw;
     text-transform: capitalize;
@@ -422,8 +424,8 @@ footer .lists ul{
 .lHead{
     margin-top: 3vh;
     margin-bottom: 1vh;
-    font-weight: 400 !important;
-    color: rgba(41, 41, 41, 0.911);
+    font-weight: 600 !important;
+    color: rgba(60, 60, 60, 0.877);
 }
 footer .lists li a{
     text-decoration: none;
@@ -435,6 +437,46 @@ footer .lists li a{
 }
 footer .lists li a:hover{
     text-decoration: underline;
+}
+.lowerFooter{
+    display: flex;
+    flex-direction: column;
+    width: 63%;
+    font-size: 0.8vw;
+}
+.lowerFooter hr{
+    width: 100%;
+    margin: 0.7vh 0vw !important;
+}
+.lowerFooter p a{
+    color: #06c;
+}
+.lowerFooter p{
+    width: fit-content;
+}
+.belowHr ul{
+    display: flex;
+    list-style-type: none;
+}
+.belowHr{
+    display: flex;
+    justify-content: left;
+    margin-top: -1.3vh !important;
+    margin-bottom: 3vh;
+}
+.belowHr ul a{
+    color: rgb(45, 45, 45);
+    text-decoration:none ;
+    /* font-size: inherit; */
+    font-size: 0.81vw;
+    margin: 0vh 0.5vw;
+}
+.belowHr ul a:hover{
+    text-decoration: underline;
+}
+#india{
+    /* margin-left: 20vw !important; */
+    transform: translateX(16vw);
 }
 /* .upperheader{
     border: 2px solid blue;

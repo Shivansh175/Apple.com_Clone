@@ -42,7 +42,7 @@ function clearBlur(target)
 
 arr[0].addEventListener("mouseenter",function(){
     document.querySelector("#sec1").classList.add("Visible");
-    document.querySelector("#sec1").classList.add("upperheader");
+    // document.querySelector("#sec1").classList.add("upperheader");
     for(var i=0;i<10;i++)
     {
         if(i!==0)
