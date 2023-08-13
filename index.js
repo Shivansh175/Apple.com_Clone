@@ -7,6 +7,10 @@ function takeItDown(sectionId)
     document.querySelector(sectionId).style.transform= "translateY(0%)";
     document.querySelector(sectionId).style.transition= "0.3s";
     document.querySelector("#navbar").classList.add("navTransition");
+
+    blur("main");
+    blur("footer");
+    
 }
 
 // FUNCTION TO REVERT BACK THE TRANSITION WHEN MOUSE HOVER IS OVER
@@ -17,7 +21,21 @@ function takeBackUp(){
         document.querySelector("#sec"+(i+1)).style.transform="translateY(-100%)";
         document.querySelector("#sec"+(i+1)).style.transition="0.3s";
         document.querySelector("#navbar").classList.remove("navTransition");
+
+        clearBlur("main");
+        clearBlur("footer");
     }
+}
+
+// FUNCTIONS TO ADD AND REMOVE BLUR TO MAIN AND FOOTER SECTION IN CASE OF HOVER
+
+function blur(target)
+{
+    document.querySelector(target).classList.add("blur");
+}
+function clearBlur(target)
+{
+    document.querySelector(target).classList.remove("blur");
 }
 
 //FOR STORE LINK

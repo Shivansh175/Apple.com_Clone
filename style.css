@@ -20,7 +20,7 @@ body{
     font-size: 0.9vw;
     position:fixed;
     transition: 0.3s !important;
-    z-index: 2;
+    z-index: 3;
     /* background-color: rgb(74, 74, 74); */
 }
 .navTransition{
@@ -380,6 +380,10 @@ div#ads{
 .next,.prev{
     opacity: 0.4;
 }
+.blur{
+    filter: blur(18px);
+    /* opacity: 0.8; */
+}
 footer{
     display: flex;
     flex-direction: column;
@@ -404,23 +408,32 @@ footer hr{
     color: rgb(92, 92, 92);
     margin: 3vh 0vw;
 }
-.lists{
+footer .lists{
     width: 63%;
     justify-content: space-between;
     display: flex;
 }
-.lists ul{
+footer .lists ul{
     list-style-type: none;
+    font-size: 0.8vw;
+    text-transform: capitalize;
 
 }
-.lists li a{
+.lHead{
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+    font-weight: 400 !important;
+    color: rgba(41, 41, 41, 0.911);
+}
+footer .lists li a{
     text-decoration: none;
     color: rgb(92, 92, 92);
     letter-spacing: -0.01em;
     line-height: 2;
+    text-transform: capitalize;
     font-size: 0.8vw;
 }
-.lists li a:hover{
+footer .lists li a:hover{
     text-decoration: underline;
 }
 /* .upperheader{
