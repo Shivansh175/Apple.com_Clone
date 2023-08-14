@@ -19,7 +19,7 @@ body{
     /* border: 2px solid rebeccapurple; */
     font-size: 0.9vw;
     position:fixed;
-    transition: 0.3s !important;
+    /* transition: 0.3s !important; */
     z-index: 3;
     /* background-color: rgb(74, 74, 74); */
 }
@@ -262,7 +262,7 @@ div#ads{
     /* position: absolute; */
     /* margin-top: 90vh; */
     height: 90vh;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     justify-content: center;
     align-items: center;
     margin: 0vh 0.5vw 2vh 0.5vw;
@@ -274,37 +274,44 @@ div#ads{
 } */
 
 #card1{
-    background-image: url("https://is3-ssl.mzstatic.com/image/thumb/BkCQwrg5nkdzmB4uocPNhQ/1250x703.jpg");
+    background: url("https://is3-ssl.mzstatic.com/image/thumb/BkCQwrg5nkdzmB4uocPNhQ/1250x703.jpg") no-repeat center/cover;
 
 }
 #card2{
-    background-image: url("https://is4-ssl.mzstatic.com/image/thumb/TFK62rQMTTWVNoPgxjIkPQ/1250x703.jpg");
+    background: url("https://is4-ssl.mzstatic.com/image/thumb/TFK62rQMTTWVNoPgxjIkPQ/1250x703.jpg") no-repeat center/cover;
     /* opacity: 0.7; */
 
 }
 #card3{
-    background-image: url("https://is3-ssl.mzstatic.com/image/thumb/JJo1Kp84yVQ1emwipSnq2A/1250x703.jpg");
+    background: url("https://is3-ssl.mzstatic.com/image/thumb/JJo1Kp84yVQ1emwipSnq2A/1250x703.jpg") no-repeat center/cover;
 
 }
 #card4{
-    background-image: url("https://is3-ssl.mzstatic.com/image/thumb/CvNCk6LFQGbwX_XWcd7gag/1250x703.jpg");
-    /* opacity: 0.4; */
+    background: url("https://is3-ssl.mzstatic.com/image/thumb/CvNCk6LFQGbwX_XWcd7gag/1250x703.jpg") no-repeat center/cover;
 
 }
 #card5{
-    background-image: url("https://is2-ssl.mzstatic.com/image/thumb/divxDY27bQOH7PPRX2wfJQ/1250x703.jpg");
+    background: url("https://is2-ssl.mzstatic.com/image/thumb/divxDY27bQOH7PPRX2wfJQ/1250x703.jpg") no-repeat center/cover;
 
 }
 #card6{
-    background-image: url("https://is2-ssl.mzstatic.com/image/thumb/JdmLVQN99mIa15_uECg4uw/1250x703.jpg");
+    background: url("https://is2-ssl.mzstatic.com/image/thumb/JdmLVQN99mIa15_uECg4uw/1250x703.jpg") no-repeat center/cover;
 
 }
 #card7{
-    background-image: url("https://is3-ssl.mzstatic.com/image/thumb/OCdJtCx9e51TYxoG8aBJZQ/1250x703.jpg");
+    background: url("https://is3-ssl.mzstatic.com/image/thumb/OCdJtCx9e51TYxoG8aBJZQ/1250x703.jpg") no-repeat center/cover;
 
+}
+.opaque{
+    opacity: 0.3;
+    background-color: black;
 }
 .nav {
     margin-bottom: 2vh;
+}
+.nav i{
+    font-size: 0.7vw;
+    margin: 0vh 0.5vw;
 }
 /* .nav #pauseButton{
     margin-left: 45vw;

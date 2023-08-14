@@ -6,7 +6,8 @@ function takeItDown(sectionId)
 {
     document.querySelector(sectionId).style.transform= "translateY(0%)";
     document.querySelector(sectionId).style.transition= "0.3s";
-    document.querySelector("#navbar").classList.add("navTransition");
+        // $(sectionId).slideDown();
+        document.querySelector("#navbar").classList.add("navTransition");
 
     blur("main");
     blur("footer");
@@ -20,6 +21,7 @@ function takeBackUp(){
     {
         document.querySelector("#sec"+(i+1)).style.transform="translateY(-100%)";
         document.querySelector("#sec"+(i+1)).style.transition="0.3s";
+        // $("#sec"+(i+1)).slideUp();
         document.querySelector("#navbar").classList.remove("navTransition");
 
         clearBlur("main");
@@ -242,11 +244,49 @@ document.querySelector("#button").addEventListener("click",function(){
         
 });
 
-
+$("#card5").addClass("opaque");
+$("#card3").addClass("opaque");
 //CODE FOR CAROUSEL MOVEMENT
-const carousel=document.querySelector("#carousel");
+$("#carousel .nav i").click(function(){
+    
+    $(".currCard").attr("id","card4");
+    $(".prevCard").attr("id","card3");
+    $(".nextCard").attr("id","card5");
 
-const dragging=(e)=>{
-    carousel.scrollLeft=e.pageX;
-}
-carousel.addEventListener("mousemove",dragging);
+    var curr= $(this).attr("id");
+    var next,prev;
+
+    if(curr==7)
+    {
+        next=1;
+        prev=6;
+    }
+    else if(curr==1)
+    {
+        next=2;
+        prev=7;
+    }
+    else{
+        next=++curr;
+        curr-=1;
+        prev=curr-1;
+    }
+
+    // alert(next);
+    // alert(curr);
+    // alert(prev);
+    
+    $("#card3").addClass("opaque");
+    $("#card5").addClass("opaque");
+
+
+    $("#card5").attr("id","card"+next);
+    $("#card4").attr("id","card"+curr);
+    $("#card3").attr("id","card"+prev);
+
+});
+
+// function bringClickedCard(cardId)
+// {
+    
+// }
