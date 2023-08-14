@@ -279,10 +279,23 @@ $("#carousel .nav i").click(function(){
     $("#card3").addClass("opaque");
     $("#card5").addClass("opaque");
 
+    // if(curr!==7 & curr!==1)
+    // {
+        // alert("HEllo");
+        var pcntg=-(curr-4)*100 + "%";
+        var carouselCards = document.querySelector('.carouselCards');
+        
+        carouselCards.style.setProperty("--percentage",pcntg);
+        $(".carouselCards div").addClass("move");
+        // translateX
+    // }
+    // else{
+    //      $("#card5").attr("id","card"+next);
+    // $("#card4").attr("id","card"+curr);
+    // $("#card3").attr("id","card"+prev);
+    // }
 
-    $("#card5").attr("id","card"+next);
-    $("#card4").attr("id","card"+curr);
-    $("#card3").attr("id","card"+prev);
+   
 
 });
 

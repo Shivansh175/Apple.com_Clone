@@ -247,6 +247,7 @@ div#ads{
     /* overflow-x: scroll !important; */
 }
 .carouselCards{
+    --percentage:100% ;
     /* overflow-x: visible !important; */
     display: flex;
     /* flex-direction: column; */
@@ -265,7 +266,7 @@ div#ads{
     /* border: 2px solid black; */
     justify-content: center;
     align-items: center;
-    margin: 0vh 0.5vw 2vh 0.5vw;
+    margin: 0vh 0.4vw 1.7vh 0.4vw;
     /* align-self: center; */
     /* margin-right: 2vw; */
 }
@@ -305,6 +306,10 @@ div#ads{
 .opaque{
     opacity: 0.3;
     background-color: black;
+}
+.move{
+    transform: translateX(var(--percentage));
+    transition: 2s;
 }
 .nav {
     margin-bottom: 2vh;
