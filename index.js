@@ -243,17 +243,21 @@ document.querySelector("#button").addEventListener("click",function(){
     }
         
 });
-
-$("#card5").addClass("opaque");
-$("#card3").addClass("opaque");
+// $(".carouselCards div").css("transform:translateX(-400%)");
+// $("#card5").addClass("opaque");
+// $("#card3").addClass("opaque");
 //CODE FOR CAROUSEL MOVEMENT
-$("#carousel .nav i").click(function(){
-    
-    $(".currCard").attr("id","card4");
-    $(".prevCard").attr("id","card3");
-    $(".nextCard").attr("id","card5");
+var curr="1";
+$(".carouselCards div").addClass("move");
+$(".carouselCards div").addClass("opaque");
+$("#card"+curr).removeClass("opaque");
+$("#"+curr).attr("style","color:#303030");
 
-    var curr= $(this).attr("id");
+$("#carousel .nav i").click(function(){
+    curr=$(this).attr("id");
+
+    $(".nav i").attr("style","color:#636363");
+    $(this).attr("style","color:#303030");
     var next,prev;
 
     if(curr==7)
@@ -271,35 +275,20 @@ $("#carousel .nav i").click(function(){
         curr-=1;
         prev=curr-1;
     }
-
-    // alert(next);
-    // alert(curr);
     // alert(prev);
-    
-    $("#card3").addClass("opaque");
-    $("#card5").addClass("opaque");
+    // alert(curr);
+    // alert(next);
+    $(".carouselCards div").addClass("opaque");
+    $("#card"+curr).removeClass("opaque");
 
-    // if(curr!==7 & curr!==1)
-    // {
-        // alert("HEllo");
-        var pcntg=-(curr-4)*100 + "%";
-        var carouselCards = document.querySelector('.carouselCards');
-        
-        carouselCards.style.setProperty("--percentage",pcntg);
-        $(".carouselCards div").addClass("move");
-        // translateX
-    // }
-    // else{
-    //      $("#card5").attr("id","card"+next);
-    // $("#card4").attr("id","card"+curr);
-    // $("#card3").attr("id","card"+prev);
-    // }
+    var pcntg=-(curr-4)*100 + "%";
+    var carouselCards = document.querySelector('.carouselCards');
+    carouselCards.style.setProperty("--percentage",pcntg);
 
-   
-
+    $(".carouselCards div").addClass("move");
 });
-
-// function bringClickedCard(cardId)
+// for(var val=-100;val>-700;val-=100)
 // {
-    
+//     var carouselCards = document.querySelector('.carouselCards');
+//     carouselCards.style.setProperty("--percentage",val);
 // }

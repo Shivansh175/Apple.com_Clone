@@ -247,7 +247,7 @@ div#ads{
     /* overflow-x: scroll !important; */
 }
 .carouselCards{
-    --percentage:100% ;
+    --percentage:300% ;
     /* overflow-x: visible !important; */
     display: flex;
     /* flex-direction: column; */
@@ -269,6 +269,7 @@ div#ads{
     margin: 0vh 0.4vw 1.7vh 0.4vw;
     /* align-self: center; */
     /* margin-right: 2vw; */
+    /* transform: translateX(300%); */
 }
 /* #carousel .nav{
     margin-top: 90vh;
@@ -304,12 +305,13 @@ div#ads{
 
 }
 .opaque{
-    opacity: 0.3;
+    opacity: 0.25;
+    filter: blur(1px);
     background-color: black;
 }
 .move{
     transform: translateX(var(--percentage));
-    transition: 2s;
+    transition: 0.5s;
 }
 .nav {
     margin-bottom: 2vh;
@@ -317,6 +319,7 @@ div#ads{
 .nav i{
     font-size: 0.7vw;
     margin: 0vh 0.5vw;
+    cursor: pointer;
 }
 /* .nav #pauseButton{
     margin-left: 45vw;
