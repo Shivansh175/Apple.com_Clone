@@ -419,7 +419,7 @@ div#ads{
     opacity: 0.4;
 }
 .blur{
-    filter: blur(18px);
+    filter: saturate(180%)blur(10px);
     /* opacity: 0.8; */
 }
 footer{
@@ -449,6 +449,7 @@ footer hr{
 }
 footer .lists{
     width: 1000px;
+    /* width: 63%; */
     /* max-width: 1000px; */
     /* border: 2px solid red; */
     justify-content: space-between;
@@ -480,6 +481,9 @@ footer .lists li a{
 }
 footer .lists li a:hover{
     text-decoration: underline;
+}
+footer .lists2{
+    display: none;
 }
 .lowerFooter{
     display: flex;
@@ -526,7 +530,73 @@ footer .lists li a:hover{
     background-color: rgb(20, 20, 20);
 } */
 @media only screen and ( max-width:1030px ) {
-    body{
-        background-color: red;
+    #navbar ul a{
+        display: none;
+    }
+    #apple_logo,#right_icons a{
+        display: block !important;
+        /* border: 2px solid green; */
+        font-size: 17px;
+    }
+    div#ads{
+        font-size: 14px;
+        margin-top: 7vh;
+    }
+    footer{
+        width: 100%;
+    }
+    footer p,footer hr,.lowerFooter,.lowerFooter hr{
+        width: 95% !important;
+    }
+    footer .lists{
+        display: none;
+    }
+    footer .lists2{
+        display: flex;
+        width: 95%;
+        justify-content: center;
+        margin: 2vh 0vw;
+        
+    }
+    .lists2 ul{
+        list-style-type: none;
+        width: 100%;
+        /* border: 2px solid black; */
+        padding: 0px;
+        margin: 0px;
+        justify-content: center;
+    }
+    .lists2 li {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+        font-size: 13px;
+        padding: 1.5vh 0vw;
+        /* border: 2px solid tomato; */
+        justify-content: space-between;
+    }
+    .lists2 li a{
+        text-decoration: none;
+        color: rgb(65, 65, 65) !important;
+    }
+    .lists2 li i{
+        font-size: 11px !important;
+    }
+    .lists2 ul hr{
+        margin: 0px;
+        width: 100% !important;
+    }
+    .lowerFooter .belowHr{
+        margin-top: 0.8vh !important;
+        flex-direction: column;
+        justify-content: left;
+    }
+    .lowerFooter hr{
+        display: none;
+    }
+    .lowerFooter .belowHr ul{
+        padding-left: 0px !important;
+        margin-left: 0px;
     }
 }
