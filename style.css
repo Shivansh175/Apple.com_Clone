@@ -10,14 +10,15 @@ body{
 #navbar{
     font-weight: 400;
     letter-spacing: -.01em;
-    line-height: 1;
+    line-height: 1.5;
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.792);
-    backdrop-filter: blur(10px);
+    backdrop-filter: saturate(180%)blur(20px);
     /* border: 2px solid rebeccapurple; */
-    font-size: 0.9vw;
+    /* font-size: 0.9vw; */
+    font-size: 12px;
     position:fixed;
     /* transition: 0.3s !important; */
     z-index: 3;
@@ -30,8 +31,10 @@ body{
 }
 #navbar ul{
     display: flex;
+    width: 1000px;
+    /* border: 2px solid yellow; */
     padding: 0px;
-    justify-content: center;
+    justify-content: space-between;
     list-style-type: none;
 }
 #right_icons{
@@ -39,7 +42,7 @@ body{
 }
 #navbar ul a{
     color: rgb(197, 197, 197);
-    padding: 0vw 0.4vw 0vw 0.4vw;
+    padding: 0vw 0.4vw 0vw 0.5vw;
     margin: 0vw 0.9vw 0vw 0.9vw;
     text-decoration: none;
 }
@@ -49,6 +52,7 @@ body{
 div#ads{
     display: flex;
     font-size: 0.95vw;
+    font-size: 13px;
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
@@ -64,19 +68,20 @@ div#ads{
 #forUniversity,#iphone14,#iphone14pro{
     border: none;
     width: 100%;
-    height: 78vh;
+    min-height: 582px;
+    overflow-y: hidden !important;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 2vh;
+    margin-bottom: 15px;
     background-color: transparent;
     font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
     /* background-image : url("https://www.apple.com/105/media/ww/home/2023/c75c958b-b7ab-431f-8c24-703fa6aafd7e/anim/bts-hero/large.mp4") center cover; */
 }
 #forUniversity h1,#iphone14pro h1,#iphone14 h1{
-    font-size: 3.55vw;
-    width: 34%;
+    font-size: 56px;
+    width: 50%;
     margin-top: 5vh;
     margin-bottom: -2.5vh;
     text-align: center;
@@ -85,7 +90,7 @@ div#ads{
     background-color: transparent;
 }
 #forUniversity h3,#iphone14pro h3,#iphone14 h3{
-    font-size: 1.9vw;
+    font-size: 28px;
     font-weight: 500;
     letter-spacing: -0.04em;
     margin-bottom: 2vh;
@@ -97,7 +102,7 @@ div#ads{
     text-decoration: none;
     color: #06c;
     margin: 0vh 0.8vw 0vh 0.8vw;
-    font-size: 1.35vw;
+    font-size: 21px;
 }
 #forUniversity video{
     display: flex;
@@ -133,7 +138,8 @@ div#ads{
     position: relative;
     /* z-index: -1; */
     align-self:center;
-    width: 65%;
+    min-width: 60%;
+    max-width: 100%;
     margin-top: -4vh;
     /* margin-bottom: 100vh !important; */
     /* margin-bottom: 0vh !important; */
@@ -149,7 +155,10 @@ div#ads{
 }
 #iphone14 img{
     display: flex;
-    width: 50%;
+    /* margin-top: -4vh; */
+    min-width: 50%;
+    max-width: 58%;
+    min-height: 73%;
     z-index: -1;
 }
 .cards{
@@ -172,22 +181,22 @@ div#ads{
     /* border: 2px solid green; */
 }
 .cards button h1{
-    font-size: 2.4vw;
+    font-size: 40px;
     font-weight: 600;
-    width: 55%;
+    width: 90%;
     letter-spacing: -0.02em;
     margin-bottom: 0vh;
 }
 .cards button h3{
-    font-size: 1.4vw;
+    font-size: 21px;
     opacity: 0.85;
     font-weight: 500;
     margin-top: 1.6vh;
     letter-spacing: -0.01em;
-    width: 63%;
+    width: 70%;
 }
 .cards button a{
-    font-size: 1.2vw;
+    font-size: 17px;
     color: #06c;
 }
 .cards button img{
@@ -196,44 +205,49 @@ div#ads{
     position: relative;
 }
 #switch img{
-    width: 79%;
-    margin-top: 4vh;
+    /* width: 79%; */
+    max-width: 90%;
+    min-height: 55%;
+    /* margin-top: 4vh; */
     /* border: 2px solid crimson; */
 }
 #macbook img{
-    width: 149%;
-    margin-top:-21vh;
-    height: 100vh;
+    max-width: 200%;
+    /* max-width: 120%; */
+    margin-top:-26vh;
+    min-height: 109%;
     /* height: 80vh; */
 }
 #watch,#ipad,#airpods{
     color: white;
 }
 #watch h1{
-    font-size: 2.0vw;
+    font-size: 32px;
     margin-top: 7vh;
 }
 #watch h5{
     margin-top: 0vh;
     margin-bottom: 1.5vh;
-    font-size: 0.9vw;
     letter-spacing: 0.1em;
     color: crimson;
 }
 #watch h3{
     margin-top: 0vh;
+    font-size: 19px;
     /* margin-bottom: 5vh; */
 }
 #watch img{
-    width: 177%;
-    margin-top: -26vh;
+    min-height: 108%;
+    /* max-width: 120%; */
+    margin-top: -28vh;
 }
 #airpods h1,#trade h1{
     margin-top: 7vh;
 }
 #ipad img,#airpods img,#trade img{
-    width: 180%;
-    margin-top: -24vh;
+    max-width: 180%;
+    min-height: 115%;
+    margin-top: -28vh;
 }
 /* {
     width: 180%;
@@ -262,7 +276,7 @@ div#ads{
     display: flex;
     /* position: absolute; */
     /* margin-top: 90vh; */
-    height: 90vh;
+    height: 45vw;
     /* border: 2px solid black; */
     justify-content: center;
     align-items: center;
@@ -303,6 +317,7 @@ div#ads{
 #card7{
     background: url("https://is3-ssl.mzstatic.com/image/thumb/OCdJtCx9e51TYxoG8aBJZQ/1250x703.jpg") no-repeat center/cover;
 
+
 }
 .opaque{
     opacity: 0.25;
@@ -321,6 +336,9 @@ div#ads{
     margin: 0vh 0.5vw;
     cursor: pointer;
 }
+.nav i:hover{
+    color: #303030 !important;
+}
 /* .nav #pauseButton{
     margin-left: 45vw;
 } */
@@ -333,8 +351,10 @@ div#ads{
     height: fit-content;
     display: flex;
     z-index: 1000;
-    margin-top: 5.7vh;
+    margin: 0px !important;
+    margin-top: 5.7vh !important;
     padding: 3.5vh 0vw 6vh 0vw;
+    padding-left: 0px;
     justify-content: center;
     background-color: rgb(20, 20, 20);
     position: fixed;
@@ -351,7 +371,10 @@ div#ads{
 }
 .hoverMenu .lists{
     display: flex;
-    width: 70.2%;
+    width: 1045px;
+    padding: 0px;
+    margin-left: 0px !important;
+    /* border: 2px solid white; */
     justify-content: left;
 }
 .hoverMenu ul{
@@ -371,16 +394,16 @@ div#ads{
     color: rgb(240, 240, 240);
 }
 #ul1 li{
-    font-size: 1.6vw;
+    font-size: 28px;
     margin-bottom: 2vh;
 }
 #ul2 li,#ul3 li{
-    font-size: 0.9vw;
+    font-size: 17px;
     margin-bottom: 1.4vh;
 }
 #listHead{
     font-weight: 400 !important;
-    font-size: 0.9vw !important;
+    font-size: 13px !important;
     color: #bebebe;
     margin-bottom: 2.7vh !important;
 }
@@ -408,10 +431,11 @@ footer{
     width: 100%;
 }
 footer p{
-    width: 63%;
+    width: 1000px;
     letter-spacing: -0.01em;
     line-height: 1.4;
-    font-size: 0.8vw;
+    /* font-size: 0.8vw; */
+    font-size: 12px;
     color: rgb(92, 92, 92);
     margin-bottom: 0vh;
 }
@@ -419,12 +443,14 @@ footer p a{
     color: rgb(56, 56, 56);
 }
 footer hr{
-    width: 63%;
+    width: 1000px !important;
     color: rgb(92, 92, 92);
     margin: 3vh 0vw;
 }
 footer .lists{
-    width: 63%;
+    width: 1000px;
+    /* max-width: 1000px; */
+    /* border: 2px solid red; */
     justify-content: space-between;
     display: flex;
 }
@@ -432,9 +458,9 @@ footer .lists ul{
     margin: 0px;
     padding: 0px;
     list-style-type: none;
-    font-size: 0.8vw;
+    /* font-size: 0.8vw; */
+    font-size: 12px;
     text-transform: capitalize;
-
 }
 .lHead{
     margin-top: 3vh;
@@ -448,7 +474,9 @@ footer .lists li a{
     letter-spacing: -0.01em;
     line-height: 2;
     text-transform: capitalize;
-    font-size: 0.8vw;
+    /* font-size: 0.8vw; */
+    font-size: 12px;
+
 }
 footer .lists li a:hover{
     text-decoration: underline;
@@ -456,8 +484,10 @@ footer .lists li a:hover{
 .lowerFooter{
     display: flex;
     flex-direction: column;
-    width: 63%;
-    font-size: 0.8vw;
+    max-width: 1000px;
+    /* font-size: 0.8vw; */
+    font-size: 12px;
+
 }
 .lowerFooter hr{
     width: 100%;
@@ -483,17 +513,20 @@ footer .lists li a:hover{
     color: rgb(45, 45, 45);
     text-decoration:none ;
     /* font-size: inherit; */
-    font-size: 0.81vw;
+    /* font-size: 0.81vw; */
+    font-size: 13px;
+
     margin: 0vh 0.5vw;
 }
 .belowHr ul a:hover{
     text-decoration: underline;
 }
-#india{
-    /* margin-left: 20vw !important; */
-    transform: translateX(16vw);
-}
 /* .upperheader{
     border: 2px solid blue;
     background-color: rgb(20, 20, 20);
 } */
+@media only screen and ( max-width:1030px ) {
+    body{
+        background-color: red;
+    }
+}

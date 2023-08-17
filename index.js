@@ -287,8 +287,3 @@ $("#carousel .nav i").click(function(){
 
     $(".carouselCards div").addClass("move");
 });
-// for(var val=-100;val>-700;val-=100)
-// {
-//     var carouselCards = document.querySelector('.carouselCards');
-//     carouselCards.style.setProperty("--percentage",val);
-// }
