@@ -13,6 +13,45 @@
 <body>
     
     <header>
+        <div class="menu">
+            <ul>
+                <li id="closeMenu" >
+                    <a href=""> </a>
+                    <i class="fa-solid fa-multiply" style="color: #ffffffae;"></i>
+                </li>
+                <li>
+                    <a href="">Store</a>
+                    <i class="fa-solid fa-angle-right" style="color: #ffffffae;"></i>
+                </li>
+                <li><a href="">Mac</a>
+                    <i class="fa-solid fa-angle-right" style="color: #ffffffae;"></i>
+                </li>
+                <li><a href="">iPad</a>
+                    <i class="fa-solid fa-angle-right" style="color: #ffffffae;"></i>
+                </li>
+                <li><a href="">iPhone</a>
+                    <i class="fa-solid fa-angle-right" style="color: #ffffffae;"></i>
+                </li>
+                <li><a href="">Watch</a>
+                    <i class="fa-solid fa-angle-right" style="color: #ffffffae;"></i>
+                </li>
+                <li><a href="">AirPods</a>
+                    <i class="fa-solid fa-angle-right" style="color: #ffffffae;"></i>
+                </li>
+                <li><a href="">TV & Home</a>
+                    <i class="fa-solid fa-angle-right" style="color: #ffffffae;"></i>
+                </li>
+                <li><a href="">Entertainment</a>
+                    <i class="fa-solid fa-angle-right" style="color: #ffffffae;"></i>
+                </li>
+                <li><a href="">Accessories</a>
+                    <i class="fa-solid fa-angle-right" style="color: #ffffffae;"></i>
+                </li>
+                <li><a href="">Support</a>
+                    <i class="fa-solid fa-angle-right" style="color: #ffffffae;"></i>
+                </li>
+            </ul>
+        </div>
         <div class="upperheader">
             <nav id="navbar">
                 <ul>
@@ -28,8 +67,9 @@
                     <a href="#" class="navLinks" id="link9"><li>Accessories</li></a>
                     <a href="#" class="navLinks" id="link10"><li>Support</li></a>
                     <div id="right_icons">
-                        <a href="#"><li><i class="fa-solid fa-magnifying-glass" style="color:  rgb(197, 197, 197);"></i></li></a>
-                        <a href="#"><li><i class="fa-solid fa-bag-shopping" style="color:  rgb(197, 197, 197);"></i></li></a>
+                        <a href="#"><i class="fa-solid fa-magnifying-glass" style="color:  rgb(197, 197, 197);"></i></a>
+                        <a href="#"><i class="fa-solid fa-bag-shopping" style="color:  rgb(197, 197, 197);"></i></a>
+                        <a href="#" id="menuIcon"><i class="fa-solid fa-bars" style="color:  rgb(197, 197, 197);"></i></a>
                     </div>
                 </ul>
             </nav>
@@ -552,81 +592,123 @@
         </section>
         <section class="lists2">
             <ul>
-                <li>
-                    <a href="#">Apple</a>
+                <li id="first" class="primaryListItems">
+                    <a href="#">Shop and Learn</a>
                     <i class="fa-solid fa-plus" id="1" style="color: #636363;"></i>
                 </li>
-                <ul>
-                    <a href="#"></a><a href=""></a><a href=""></a><a href=""></a>
+                <ul id="firstSubList">
+                    <li><a href="#">Store</a></li>
+                    <li><a href="#">Mac</a></li>
+                    <li><a href="#">iPad</a></li>
+                    <li><a href="#">iPhone</a></li>
+                    <li><a href="#">Watch</a></li>
+                    <li><a href="#">AirPods</a></li>
+                    <li><a href="#">TV & Home</a></li>
+                    <li><a href="#">AirTag</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Gift Cards</a></li>
                 </ul>
                 <hr>
-                <li>
-                    <a href="#">Apple</a>
+                <li id="second" class="primaryListItems">
+                    <a href="#">Apple Wallet</a>
                     <i class="fa-solid fa-plus" id="1" style="color: #636363;"></i>
                 </li>
-                <ul>
-                    <a href="#"></a><a href=""></a><a href=""></a><a href=""></a>
+                <ul id="secondSubList">
+                    <li><a href="#">Wallet</a></li>
                 </ul>
                 <hr>
-                <li>
-                    <a href="#">Apple</a>
+                <li id="third" class="primaryListItems">
+                    <a href="#">Account</a>
                     <i class="fa-solid fa-plus" id="1" style="color: #636363;"></i>
                 </li>
-                <ul>
-                    <a href="#"></a><a href=""></a><a href=""></a><a href=""></a>
+                <ul id="thirdSubList">
+                    <li><a href="#">Manage Your Apple ID</a></li>
+                    <li><a href="#">Apple Store Account</a></li>
+                    <li><a href="#">iCloud.com</a></li>
                 </ul>
                 <hr>
-                <li>
-                    <a href="#">Apple</a>
+                <li id="fourth" class="primaryListItems">
+                    <a href="#">Entertainment</a>
                     <i class="fa-solid fa-plus" id="1" style="color: #636363;"></i>
                 </li>
-                <ul>
-                    <a href="#"></a><a href=""></a><a href=""></a><a href=""></a>
+                <ul id="fourthSubList">
+                    <li><a href="#">Apple One</a></li>
+                    <li><a href="#">Apple TV+</a></li>
+                    <li><a href="#">Apple Music</a></li>
+                    <li><a href="#">Apple Arcade</a></li>
+                    <li><a href="#">Apple Podcasts</a></li>
+                    <li><a href="#">Apple Books</a></li>
+                    <li><a href="#">Apple Store</a></li>
                 </ul>
                 <hr>
-                <li>
-                    <a href="#">Apple</a>
+                <li id="fifth" class="primaryListItems">
+                    <a href="#">Apple Store</a>
                     <i class="fa-solid fa-plus" id="1" style="color: #636363;"></i>
                 </li>
-                <ul>
-                    <a href="#"></a><a href=""></a><a href=""></a><a href=""></a>
+                <ul id="fifthSubList">
+                    <li><a href="#">Find a Store</a></li>
+                    <li><a href="#">Genius Bar</a></li>
+                    <li><a href="#">Today at Apple</a></li>
+                    <li><a href="#">Apple Camp</a></li>
+                    <li><a href="#">Apple trade in</a></li>
+                    <li><a href="#">ways to buy</a></li>
+                    <li><a href="#">recycling programme</a></li>
+                    <li><a href="#">order Status</a></li>
+                    <li><a href="#">shopping help</a></li>
                 </ul>
                 <hr>
-                <li>
-                    <a href="#">Apple</a>
+                <li id="sixth" class="primaryListItems">
+                    <a href="#">For Business</a>
                     <i class="fa-solid fa-plus" id="1" style="color: #636363;"></i>
                 </li>
-                <ul>
-                    <a href="#"></a><a href=""></a><a href=""></a><a href=""></a>
+                <ul id="sixthSubList">
+                    <li><a href="#">apple and business</a></li>
+                    <li><a href="#">shop for business</a></li>
                 </ul>
                 <hr>
-                <li>
-                    <a href="#">Apple</a>
+                <li id="seventh" class="primaryListItems">
+                    <a href="#">For Education</a>
                     <i class="fa-solid fa-plus" id="1" style="color: #636363;"></i>
                 </li>
-                <ul>
-                    <a href="#"></a><a href=""></a><a href=""></a><a href=""></a>
+                <ul id="seventhSubList">
+                    <li><a href="#">apple and Education</a></li>
+                    <li><a href="#">shop for education</a></li>
+                    <li><a href="#">shop for university</a></li>
                 </ul>
                 <hr>
-                <li>
-                    <a href="#">Apple</a>
+                <li id="eighth" class="primaryListItems">
+                    <a href="#">For Healthcare</a>
                     <i class="fa-solid fa-plus" id="1" style="color: #636363;"></i>
                 </li>
-                <ul>
-                    <a href="#"></a><a href=""></a><a href=""></a><a href=""></a>
+                <ul id="eighthSubList">
+                    <li><a href="#">apple in healthcare</a></li>
+                    <li><a href="#">health on apple watch</a></li>
                 </ul>
                 <hr>
-                <li>
-                    <a href="#">Apple</a>
+                <li id="ninth" class="primaryListItems">
+                    <a href="#">Apple Values</a>
                     <i class="fa-solid fa-plus" id="1" style="color: #636363;"></i>
                 </li>
+                <ul id="ninthSubList">
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">education</a></li>
+                    <li><a href="#">environment</a></li>
+                    <li><a href="#">privacy</a></li>
+                    <li><a href="#">supplier responsibility</a></li>
+                </ul>
                 <hr>
-                <li>
-                    <a href="#">Apple</a>
+                <li id="tenth" class="primaryListItems">
+                    <a href="#">About Apple</a>
                     <i class="fa-solid fa-plus" id="1" style="color: #636363;"></i>
                 </li>
-                <ul>
-                    <a href="#"></a><a href=""></a><a href=""></a><a href=""></a>
+                <ul id="tenthSubList">
+                    <li><a href="#">newsroom</a></li>
+                    <li><a href="#">Apple leadership</a></li>
+                    <li><a href="#">career opportunities</a></li>
+                    <li><a href="#">investors</a></li>
+                    <li><a href="#">ethics & compliance</a></li>
+                    <li><a href="#">events</a></li>
+                    <li><a href="#">contact apple</a></li>
                 </ul>
                 <hr>
             </ul>

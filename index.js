@@ -287,3 +287,29 @@ $("#carousel .nav i").click(function(){
 
     $(".carouselCards div").addClass("move");
 });
+$(".primaryListItems").click(function(event)
+{
+    var id=$(this).attr("id");
+    $("#"+id+" i").toggleClass("fa-plus");
+    $("#"+id+" i").toggleClass("fa-multiply");
+
+    id=id+"SubList";
+    $("ul#"+id).slideToggle(250);
+
+    $(".primaryListItems").removeClass("clickedLink");
+    $(this).toggleClass("clickedLink");
+
+
+});
+$("section:not('.lists2')").click(function(){
+    $(".primaryListItems").removeClass("clickedLink");
+});
+$("footer p").click(function(){
+    $(".primaryListItems").removeClass("clickedLink");
+});
+$("#menuIcon").click(function(){
+    $(".menu").slideDown(200);
+});
+$("#closeMenu i").click(function(){
+    $(".menu").slideUp(200);
+});

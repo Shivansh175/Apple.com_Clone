@@ -7,6 +7,9 @@ body{
     justify-content: center;
     overflow-x: hidden;
 }
+.menu{
+    display: none;
+}
 #navbar{
     font-weight: 400;
     letter-spacing: -.01em;
@@ -23,6 +26,9 @@ body{
     /* transition: 0.3s !important; */
     z-index: 3;
     /* background-color: rgb(74, 74, 74); */
+}
+#right_icons a#menuIcon{
+    display: none;
 }
 .navTransition{
     background-color: rgb(20, 20, 20) !important;
@@ -445,6 +451,7 @@ footer p a{
 footer hr{
     width: 1000px !important;
     color: rgb(92, 92, 92);
+    opacity: 0.5;
     margin: 3vh 0vw;
 }
 footer .lists{
@@ -530,17 +537,63 @@ footer .lists2{
     background-color: rgb(20, 20, 20);
 } */
 @media only screen and ( max-width:1030px ) {
+    .menu{
+        display: flex;
+        background-color: rgb(20, 20, 20);
+        width: 100vw;
+        height: 100vh;
+        z-index: 1001;
+        position: fixed;
+        /* display: none; */
+    }
+    .menu ul{
+        list-style-type: none;
+        width: 100%;
+        /* padding-right: 40px; */
+    }
+    .menu li{
+        width: 100%;
+        display: flex;
+        font-size: 28px;
+        justify-content: space-between;
+        margin:2vh 0vw;
+    }
+    .menu ul li a{
+        font-weight: 600;
+        color: #ffffffde;
+        text-decoration: none;
+    }
+    .menu li i{
+        visibility: hidden;
+        margin-right: 20px;
+    }
+    .menu li:hover i{
+        visibility: visible;
+        transition: -0.2s;
+    }
+    .menu li:hover a{
+        color: #fffffff1;
+    }
+    #closeMenu,#closeMenu i{
+        margin: 0vh 20px 2vh 0px!important;
+        visibility: visible !important;
+        font-size: 28px;
+    }
     #navbar ul a{
         display: none;
     }
     #apple_logo,#right_icons a{
         display: block !important;
+        padding-right: 10px !important;
         /* border: 2px solid green; */
-        font-size: 17px;
+        font-size: 19px;
     }
     div#ads{
         font-size: 14px;
         margin-top: 7vh;
+    }
+    .hoverMenu{
+        height: 100%;
     }
     footer{
         width: 100%;
@@ -554,8 +607,9 @@ footer .lists2{
     footer .lists2{
         display: flex;
         width: 95%;
+        /* border: 2px solid red; */
         justify-content: center;
-        margin: 2vh 0vw;
+        margin: 0vh 0vw 2vh 0vw;
         
     }
     .lists2 ul{
@@ -571,7 +625,7 @@ footer .lists2{
         display: flex;
         flex-direction: row;
         cursor: pointer;
-        font-size: 13px;
+        font-size: 12px;
         padding: 1.5vh 0vw;
         /* border: 2px solid tomato; */
         justify-content: space-between;
@@ -582,10 +636,32 @@ footer .lists2{
     }
     .lists2 li i{
         font-size: 11px !important;
+        padding-right: 4px;
     }
     .lists2 ul hr{
         margin: 0px;
         width: 100% !important;
+    }
+    .lists2 ul ul{
+        margin-left: 10px;
+        display: none;
+        text-transform: capitalize;
+        /* border: 2px solid blue; */
+    }
+    .lists2 ul ul li{
+        width: 100%;
+        /* padding: 0px; */
+        /* border: 2px solid rgb(221, 255, 0) !important; */
+    }
+    .lists2 ul ul li:hover a{
+        text-decoration: underline;
+    }
+    
+    .clickedLink{
+        /* padding-right: 20px !important; */
+        border: 2px solid rgb(0, 187, 208,0.84);
+        border-top: 4px solid rgba(0, 187, 208, 0.84) !important;
+        border-bottom: 4px solid rgb(0, 187, 208,0.84) !important;
     }
     .lowerFooter .belowHr{
         margin-top: 0.8vh !important;
@@ -595,8 +671,9 @@ footer .lists2{
     .lowerFooter hr{
         display: none;
     }
-    .lowerFooter .belowHr ul{
+    .belowHr ul,.belowHr ul li a{
         padding-left: 0px !important;
+        margin-right: 2px;
         margin-left: 0px;
     }
 }
