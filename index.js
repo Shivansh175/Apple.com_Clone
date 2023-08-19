@@ -307,9 +307,12 @@ $("section:not('.lists2')").click(function(){
 $("footer p").click(function(){
     $(".primaryListItems").removeClass("clickedLink");
 });
+$(".menu").removeClass("hidden");
 $("#menuIcon").click(function(){
     $(".menu").slideDown(200);
+    $("body").addClass("overflowHidden");
 });
 $("#closeMenu i").click(function(){
     $(".menu").slideUp(200);
+    $("body").removeClass("overflowHidden");
 });

@@ -544,12 +544,15 @@ footer .lists2{
         height: 100vh;
         z-index: 1001;
         position: fixed;
-        /* display: none; */
+        display: none;
     }
     .menu ul{
         list-style-type: none;
         width: 100%;
         /* padding-right: 40px; */
+    }
+    .overflowHidden{
+        overflow: hidden;
     }
     .menu li{
         width: 100%;
@@ -565,7 +568,7 @@ footer .lists2{
     }
     .menu li i{
         visibility: hidden;
-        margin-right: 20px;
+        margin-right: 65px;
     }
     .menu li:hover i{
         visibility: visible;
@@ -575,7 +578,7 @@ footer .lists2{
         color: #fffffff1;
     }
     #closeMenu,#closeMenu i{
-        margin: 0vh 20px 2vh 0px!important;
+        margin: 0vh 65px 2vh 0px!important;
         visibility: visible !important;
         font-size: 28px;
     }
@@ -632,7 +635,7 @@ footer .lists2{
     }
     .lists2 li a{
         text-decoration: none;
-        color: rgb(65, 65, 65) !important;
+        color: rgba(65, 65, 65, 0.838) !important;
     }
     .lists2 li i{
         font-size: 11px !important;
