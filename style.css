@@ -16,7 +16,7 @@ body{
     line-height: 1.5;
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
     background-color: rgba(0, 0, 0, 0.792);
     backdrop-filter: saturate(180%)blur(20px);
     /* border: 2px solid rebeccapurple; */
@@ -63,6 +63,8 @@ div#ads{
     align-items: center;
     background-color: #ffffff;
     margin-top: 6vh;
+    padding: 0vh 2vw;
+    text-align: center;
 }
 #ads a{
     text-decoration: none;
@@ -555,11 +557,13 @@ footer .lists2{
         overflow: hidden;
     }
     .menu li{
+        cursor: pointer;
         width: 100%;
         display: flex;
         font-size: 28px;
         justify-content: space-between;
-        margin:2vh 0vw;
+        padding:1.2vh 0vw;
+        margin: 0vh 0vh !important;
     }
     .menu ul li a{
         font-weight: 600;
@@ -577,10 +581,14 @@ footer .lists2{
     .menu li:hover a{
         color: #fffffff1;
     }
-    #closeMenu,#closeMenu i{
-        margin: 0vh 65px 2vh 0px!important;
+    #closeMenu{
+        cursor: default !important;
+        margin: 0vh 65px 0vh 0px!important;
+    }
+    #closeMenu i{
         visibility: visible !important;
         font-size: 28px;
+        cursor: pointer !important;
     }
     #navbar ul a{
         display: none;
@@ -590,6 +598,9 @@ footer .lists2{
         padding-right: 10px !important;
         /* border: 2px solid green; */
         font-size: 19px;
+    }
+    #right_icons{
+        padding-right: 0.5vw !important;
     }
     div#ads{
         font-size: 14px;
@@ -678,5 +689,156 @@ footer .lists2{
         padding-left: 0px !important;
         margin-right: 2px;
         margin-left: 0px;
+    }
+}
+@media only screen and ( max-width:976px ){
+    /* body{
+        background-color: red;
+    } */
+    #right_icons{
+        padding-right: 2vw !important;
+    }
+    #forUniversity h1,#iphone14pro h1,#iphone14 h1{
+        font-size: 32px;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    #forUniversity h3,#iphone14pro h3,#iphone14 h3{
+        margin-top: 5px;
+        font-size: 19px;
+    }
+    #forUniversity a,#iphone14pro a,#iphone14 a{
+        font-size: 17px;
+    }
+    #forUniversity #button{
+        align-self: flex-end;
+        /* width: 2vw; */
+        /* position: absolute; */
+        font-size: 28px;
+        opacity: 0.8;
+        margin-top:51vh;
+        margin-right: 1vw;
+    }
+    #forUniversity video{
+        margin-top: -10.5vh;
+        /* width: 99.5vw; */
+        min-height: 90%;
+    }
+    #iphone14pro img{
+        display: flex;
+        position: relative;
+        /* z-index: -1; */
+        align-self:center;
+        min-height: 75%;
+        max-width: 90%;
+        margin-top: 5vh;
+        /* margin-bottom: 100vh !important; */
+        /* margin-bottom: 0vh !important; */
+    }
+    #iphone14pro .links,#iphone14pro h3{
+        z-index: 2;
+        background-color: transparent;
+    }
+    #iphone14{
+        color: rgb(16, 16, 16);
+        background-color: transparent
+        /* margin-bottom: 0px; */
+    }
+    #iphone14 img{
+        display: flex;
+        margin-top: 0vh;
+        min-height: 400px !important;
+        max-width: 90%;
+        z-index: -1;
+    }
+    .cards{
+        display: flex;
+        width: 100vw;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .cards button{
+        border: none;
+        display: flex;
+        cursor:pointer;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 2vh;
+        height: 78vh;
+        background-color: transparent;
+        /* border: 2px solid green; */
+    }
+    .cards button h1{
+        font-size: 32px;
+        font-weight: 600;
+        width: 60%;
+        letter-spacing: -0.02em;
+        margin-bottom: 0vh;
+    }
+    .cards button h3{
+        font-size: 19px;
+        opacity: 0.85;
+        font-weight: 500;
+        margin-top: 1.6vh;
+        letter-spacing: -0.01em;
+        width: 60%;
+    }
+    .cards button a{
+        font-size: 17px;
+        color: #06c;
+    }
+    .cards button img{
+        z-index: -1;
+        display: flex;
+        position: relative;
+    }
+    #switch img{
+        /* width: 79%; */
+        max-width: 60%;
+        min-height: 60%;
+        /* margin-top: 4vh; */
+        /* border: 2px solid crimson; */
+    }
+    #macbook img{
+        max-width: 150%;
+        /* max-width: 120%; */
+        margin-top:-26vh;
+        min-height: 110%;
+        /* height: 80vh; */
+    }
+    #watch,#ipad,#airpods{
+        color: white;
+    }
+    #watch h1{
+        font-size: 32px;
+        margin-top: 7vh;
+    }
+    #watch h5{
+        margin-top: 0vh;
+        margin-bottom: 1.5vh;
+        letter-spacing: 0.1em;
+        color: crimson;
+    }
+    #watch h3{
+        margin-top: 0vh;
+        font-size: 19px;
+        /* margin-bottom: 5vh; */
+    }
+    #watch img{
+        min-height: 102%;
+        max-width: 150%;
+        margin-top: -24vh;
+    }
+    #airpods h1,#trade h1{
+        margin-top: 7vh;
+    }
+    #ipad img,#airpods img,#trade img{
+        max-width: 140%;
+        min-height: 110%;
+        margin-top: -26vh;
     }
 }
