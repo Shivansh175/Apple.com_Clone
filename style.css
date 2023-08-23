@@ -280,8 +280,9 @@ div#ads{
     /* overflow-x: scroll !important; */
 }
 .carouselCards div{
-    width: 82vw !important;
+    width:80vw !important;
     display: flex;
+    /* aspect-ratio: 5/3; */
     /* position: absolute; */
     /* margin-top: 90vh; */
     height: 45vw;
@@ -340,12 +341,12 @@ div#ads{
     margin-bottom: 2vh;
 }
 .nav i{
-    font-size: 0.7vw;
+    font-size: 10px;
     margin: 0vh 0.5vw;
     cursor: pointer;
 }
 .nav i:hover{
-    color: #303030 !important;
+    color: #303030cf !important;
 }
 /* .nav #pauseButton{
     margin-left: 45vw;
@@ -840,5 +841,9 @@ footer .lists2{
         max-width: 140%;
         min-height: 110%;
         margin-top: -26vh;
+    }
+    .carouselCards div{
+        width:87vw !important;
+        height: 55vw;
     }
 }
