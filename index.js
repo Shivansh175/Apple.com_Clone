@@ -281,6 +281,7 @@ $("#carousel .nav i").click(function(){
     $(".carouselCards div").addClass("opaque");
     $("#card"+curr).removeClass("opaque");
 
+    
     var pcntg=-(curr-4)*100 + "%";
     var carouselCards = document.querySelector('.carouselCards');
     carouselCards.style.setProperty("--percentage",pcntg);
